@@ -10,16 +10,16 @@
   </head>
   <body>
     <section class="welcomePage mainstyles">
-        <div class="container container_bg  rounded">
-          <div class="row col-sm-6 offset-md-3">
-            <h2 class="welcomePage__header col-sm-12 textCenter">
+        <div class="container welcomePage__container">
+          <div class="row justify-content-center">
+            <h2 class="welcomePage__header col-11 col-sm-9 col-md-8 ml-auto mr-auto textCenter">
               Welcome to Todo app
             </h2>
-            <div class="welcomePage__discr col-sm-12 textCenter">
+            <div class="welcomePage__discr col-11 col-sm-9 col-md-8 ml-auto mr-auto textCenter">
               Please enter your data and press “start” button
             </div>
       
-            <form action="#" class="form-horizontal welcomePage__registrationForm col-sm-12">
+            <form action="#" class="form-horizontal welcomePage__registrationForm col-11 col-sm-9 col-md-8">
               <div class="form-group">
                 <label for="inputEmail">Your email:</label>
                 <input type="email" class="form-control welcomePage__registrationForm-email " id="inputEmail" aria-describedby="emailHelp" placeholder="Please enter your email">
@@ -28,11 +28,11 @@
                 <label for="inputPassword">Your password:</label>
                 <input type="password" class="form-control" id="inputPassword" placeholder="Please enter your password">
               </div>
-              <div class="alert" role="alert">
+              <div class="alert welcomePage__registrationForm-alert" role="alert">
                 Invalid input data
               </div>
               <div class="textCenter">
-                <button type="submit" class="btn btn-lg pinkButton text-uppercase col-sm-5">Start</button>
+                <button type="submit" class="btn btn-lg welcomePage__registrationForm-pinkButton text-uppercase col-sm-5">Start</button>
               </div>
             </form>
           </div>

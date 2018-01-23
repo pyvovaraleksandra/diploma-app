@@ -1,17 +1,44 @@
-.mainstyles {
+.welcomePage {
 	font-family: 'Roboto', sans-serif;
 	background: url('../img/bg.jpg') center no-repeat;
 	font-weight: 700;
 	color: rgb(38, 38, 38);
 	padding-top: 26%;
 	padding-bottom: 26%;
+		&__header{
+			font-size: 30px;
+  			font-weight: 800;
+		}
+		&__discr{
+ 			font-size: 18px;
+  			font-weight: 800;
+		}
+		&__registrationForm{
+			font-size: 16px;
+			padding-top: 50px;
+			&-alert{
+				display: none;
+				background-color: #fa5a5a;
+				font-size: 14px;
+				line-height: 1;
+				color: #262626;
+			}
+			&-pinkButton{
+				background-color: #b80093;
+				color: #fff;
+				font-size: 18px;
+				line-height: 1.2;
+				text-align: center;
+				margin: 20px auto;
+			}
+		}
 }
 
 .textCenter{
 	text-align: center;
 }
 
-.container_bg{
+.welcomePage__container{
 	padding: 40px 0;
 	border: 1px solid #000;
 	border-radius: 15px;
@@ -19,41 +46,3 @@
 	box-shadow: 0px 4px 36.86px 1.14px rgba(40, 39, 38, 0.004);
 }
 
-.welcomePage__header{
-  font-size: 30px;
-  font-weight: 800;
-}
-
-.welcomePage__discr{
-  font-size: 18px;
-  font-weight: 800;
-}
-
-.welcomePage__registrationForm{
-	font-size: 16px;
-	padding-top: 50px;
-}
-
-.alert{
-	display: block;
-	background-color: #fa5a5a;
-	font-size: 14px;
-	line-height: 1;
-	color: #262626;
-}
-
-.pinkButton{
-	background-color: #b80093;
-	color: #fff;
-	font-size: 18px;
-	line-height: 1.2;
-	text-align: center;
-	margin: 20px auto;
-
-}
-
-@media min-width(573){
-	.row{
-		padding-right: 0px;
-	}
-}

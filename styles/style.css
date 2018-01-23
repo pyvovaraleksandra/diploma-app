@@ -1,43 +1,47 @@
-/*
-Error: Invalid CSS after "@media min-width": expected "{", was "(573){"
-        on line 55 of D:\StudyJS_HTML_CSS\diplom_app\styles\style.scss
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/StudyJS_HTML_CSS\/diplom_app\/styles\/style\.scss}line{font-family:\000031}}
+.welcomePage {
+  font-family: 'Roboto', sans-serif;
+  background: url("../img/bg.jpg") center no-repeat;
+  font-weight: 700;
+  color: #262626;
+  padding-top: 26%;
+  padding-bottom: 26%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/StudyJS_HTML_CSS\/diplom_app\/styles\/style\.scss}line{font-family:\000038}}
+  .welcomePage__header {
+    font-size: 30px;
+    font-weight: 800; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/StudyJS_HTML_CSS\/diplom_app\/styles\/style\.scss}line{font-family:\0000312}}
+  .welcomePage__discr {
+    font-size: 18px;
+    font-weight: 800; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/StudyJS_HTML_CSS\/diplom_app\/styles\/style\.scss}line{font-family:\0000316}}
+  .welcomePage__registrationForm {
+    font-size: 16px;
+    padding-top: 50px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/StudyJS_HTML_CSS\/diplom_app\/styles\/style\.scss}line{font-family:\0000319}}
+    .welcomePage__registrationForm-alert {
+      display: none;
+      background-color: #fa5a5a;
+      font-size: 14px;
+      line-height: 1;
+      color: #262626; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/StudyJS_HTML_CSS\/diplom_app\/styles\/style\.scss}line{font-family:\0000326}}
+    .welcomePage__registrationForm-pinkButton {
+      background-color: #b80093;
+      color: #fff;
+      font-size: 18px;
+      line-height: 1.2;
+      text-align: center;
+      margin: 20px auto; }
 
-50: 	text-align: center;
-51: 	margin: 20px auto;
-52: 
-53: }
-54: 
-55: @media min-width(573){
-56: 	.row{
-57: 		padding-right: 0px;
-58: 	}
-59: }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/StudyJS_HTML_CSS\/diplom_app\/styles\/style\.scss}line{font-family:\0000337}}
+.textCenter {
+  text-align: center; }
 
-Backtrace:
-D:\StudyJS_HTML_CSS\diplom_app\styles\style.scss:55
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:677:in `block'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:421:in `media_directive'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:234:in `special_directive'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:209:in `directive'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-C:/Program Files (x86)/Koala/bin/sass:22:in `load'
-C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"@media min-width\": expected \"{\", was \"(573){\"\A         on line 55 of D:\StudyJS_HTML_CSS\diplom_app\styles\style.scss\A \A 50: 	text-align: center;\A 51: 	margin: 20px auto;\A 52: \A 53: }\A 54: \A 55: @media min-width(573){\A 56: 	.row{\A 57: 		padding-right: 0px;\A 58: 	}\A 59: }"; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/StudyJS_HTML_CSS\/diplom_app\/styles\/style\.scss}line{font-family:\0000341}}
+.welcomePage__container {
+  padding: 40px 0;
+  border: 1px solid #000;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.702);
+  box-shadow: 0px 4px 36.86px 1.14px rgba(40, 39, 38, 0.004); }
