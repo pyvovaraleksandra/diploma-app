@@ -5,27 +5,44 @@
   font-weight: 700;
   color: #262626;
   padding-top: 26%;
-  padding-bottom: 26%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/StudyJS_HTML_CSS\/diplom_app\/styles\/style\.scss}line{font-family:\000038}}
+  padding-bottom: 26%;
+  display: flex; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/StudyJS_HTML_CSS\/diplom_app\/styles\/style\.scss}line{font-family:\000039}}
   .welcomePage__header {
     font-size: 30px;
     font-weight: 800; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/StudyJS_HTML_CSS\/diplom_app\/styles\/style\.scss}line{font-family:\0000312}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/StudyJS_HTML_CSS\/diplom_app\/styles\/style\.scss}line{font-family:\0000313}}
   .welcomePage__discr {
     font-size: 18px;
     font-weight: 800; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/StudyJS_HTML_CSS\/diplom_app\/styles\/style\.scss}line{font-family:\0000316}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/StudyJS_HTML_CSS\/diplom_app\/styles\/style\.scss}line{font-family:\0000317}}
   .welcomePage__registrationForm {
     font-size: 16px;
     padding-top: 50px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/StudyJS_HTML_CSS\/diplom_app\/styles\/style\.scss}line{font-family:\0000319}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/StudyJS_HTML_CSS\/diplom_app\/styles\/style\.scss}line{font-family:\0000320}}
+    .welcomePage__registrationForm-email, .welcomePage__registrationForm-pass {
+      opacity: 0.51; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/StudyJS_HTML_CSS\/diplom_app\/styles\/style\.scss}line{font-family:\0000323}}
+    .welcomePage__registrationForm-email:focus, .welcomePage__registrationForm-pass:focus {
+      background-color: #fff;
+      opacity: 1;
+      border: 1px solid #ac9eab;
+      -moz-box-shadow: none;
+      -webkit-box-shadow: none;
+      box-shadow: 0px 2px 8.73px 0.27px rgba(40, 39, 38, 0.71); }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/StudyJS_HTML_CSS\/diplom_app\/styles\/style\.scss}line{font-family:\0000331}}
+    .welcomePage__registrationForm-email:hover, .welcomePage__registrationForm-pass:hover {
+      background-color: #fff;
+      opacity: 1;
+      box-shadow: 0px 2px 8.73px 0.27px rgba(40, 39, 38, 0.71); }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/StudyJS_HTML_CSS\/diplom_app\/styles\/style\.scss}line{font-family:\0000336}}
     .welcomePage__registrationForm-alert {
       display: none;
       background-color: #fa5a5a;
       font-size: 14px;
       line-height: 1;
       color: #262626; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/StudyJS_HTML_CSS\/diplom_app\/styles\/style\.scss}line{font-family:\0000326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/StudyJS_HTML_CSS\/diplom_app\/styles\/style\.scss}line{font-family:\0000343}}
     .welcomePage__registrationForm-pinkButton {
       background-color: #b80093;
       color: #fff;
@@ -33,15 +50,26 @@
       line-height: 1.2;
       text-align: center;
       margin: 20px auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/StudyJS_HTML_CSS\/diplom_app\/styles\/style\.scss}line{font-family:\0000350}}
+      .welcomePage__registrationForm-pinkButton:focus {
+        background-color: #b80093;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/StudyJS_HTML_CSS\/diplom_app\/styles\/style\.scss}line{font-family:\0000356}}
+      .welcomePage__registrationForm-pinkButton:active {
+        background-color: #940076; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/StudyJS_HTML_CSS\/diplom_app\/styles\/style\.scss}line{font-family:\0000359}}
+      .welcomePage__registrationForm-pinkButton:hover {
+        background-color: #eb00bc; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/StudyJS_HTML_CSS\/diplom_app\/styles\/style\.scss}line{font-family:\0000337}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/StudyJS_HTML_CSS\/diplom_app\/styles\/style\.scss}line{font-family:\0000367}}
 .textCenter {
   text-align: center; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/StudyJS_HTML_CSS\/diplom_app\/styles\/style\.scss}line{font-family:\0000341}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/StudyJS_HTML_CSS\/diplom_app\/styles\/style\.scss}line{font-family:\0000371}}
 .welcomePage__container {
   padding: 40px 0;
-  border: 1px solid #000;
   border-radius: 15px;
   background-color: rgba(255, 255, 255, 0.702);
-  box-shadow: 0px 4px 36.86px 1.14px rgba(40, 39, 38, 0.004); }
+  box-shadow: 0px 4px 36.86px 1.14px rgba(40, 39, 38, 0.025); }

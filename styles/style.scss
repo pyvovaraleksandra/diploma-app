@@ -5,6 +5,7 @@
 	color: rgb(38, 38, 38);
 	padding-top: 26%;
 	padding-bottom: 26%;
+	display: flex;
 		&__header{
 			font-size: 30px;
   			font-weight: 800;
@@ -16,6 +17,22 @@
 		&__registrationForm{
 			font-size: 16px;
 			padding-top: 50px;
+			&-email, &-pass{
+				opacity: 0.51;
+			}
+			&-email:focus, &-pass:focus{
+				background-color: #fff;
+				opacity: 1;
+				border: 1px solid #ac9eab;
+				-moz-box-shadow: none;
+				-webkit-box-shadow: none;
+				box-shadow: 0px 2px 8.73px 0.27px rgba(40, 39, 38, 0.71);
+			}
+			&-email:hover, &-pass:hover{
+				background-color: #fff;
+				opacity: 1;
+				box-shadow: 0px 2px 8.73px 0.27px rgba(40, 39, 38, 0.71);
+			}
 			&-alert{
 				display: none;
 				background-color: #fa5a5a;
@@ -30,7 +47,20 @@
 				line-height: 1.2;
 				text-align: center;
 				margin: 20px auto;
+				&:focus{
+					background-color: #b80093;
+					-moz-box-shadow: none;
+					-webkit-box-shadow: none;
+					box-shadow: none;
+				}
+				&:active{
+					background-color: #940076;
+				}
+				&:hover{
+					background-color: #eb00bc;
+				}
 			}
+			
 		}
 }
 
@@ -40,9 +70,8 @@
 
 .welcomePage__container{
 	padding: 40px 0;
-	border: 1px solid #000;
 	border-radius: 15px;
 	background-color: rgba(255, 255, 255, 0.702);
-	box-shadow: 0px 4px 36.86px 1.14px rgba(40, 39, 38, 0.004);
+	box-shadow: 0px 4px 36.86px 1.14px rgba(40, 39, 38, 0.025);
 }
 
