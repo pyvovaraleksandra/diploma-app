@@ -1,0 +1,37 @@
+.left-buttons {
+	&-button {
+		display: inline-block;
+		width: 100%;
+		padding: 9px 0;
+		margin: 8px 0;
+		border-radius: 5px;
+		text-transform: uppercase;
+		color: #fff;
+		@extend %default-font;
+  		&:hover {
+  			color: #fff;
+  			text-decoration: none;
+  		}
+  		&:focus {
+  			outline: none;
+  		}
+		&-darkblue {
+			background-color: #2c3e50;
+			&:hover {
+				background-color: #0c4a88;
+			}
+		}
+		&-blue {
+			background-color: #276fa7;
+			&:hover {
+				background-color: #3a8bca;
+			}
+		}
+		&-pink {
+			background-color: #b80093;
+			&:hover {
+				background-color: #eb00bc;
+			}
+		}
+	}
+}
