@@ -1,0 +1,131 @@
+.dashboard {
+	color: #fff;
+	&__filter {
+		border-radius: 5px;
+		background-color: #34495e;
+		&-item {
+			font-weight: 400;
+			font-size: 1rem;
+		}
+		&-small {
+			@media(max-width: 375px) {
+				flex: 0 0 100%;
+    			max-width: 100%;
+			}
+		}
+		.slick-prev, .slick-next {
+			position: static;
+			transform: none;
+			height: auto;
+			width: auto;
+			padding: 13px 20px;
+		}
+		.slick-next {
+			border-left: 2px solid #2c3e50;
+		}
+		.slick-prev:before {
+		    content: url("../img/to-left.png");
+		    opacity: 1;
+		}
+		.slick-next:before {
+		    content: url("../img/to-right.png");
+		    opacity: 1;
+		}
+		.slick-list {
+			align-self: center;
+		}
+		@media(max-width: 576px) {
+			margin-top: 20px;
+			margin-bottom: 3px;
+		}
+	}
+	&__list {
+		overflow-y: auto;
+		margin-top: 7px;
+		padding-right: 9px;
+    	margin-right: -9px;
+
+		&-item {
+			align-items: center;
+			background-color: #2c3e50;
+			margin: 7px 0;
+			padding-top: 23px;
+			padding-bottom: 22px;
+			@media (min-width: 576px) {
+				&:nth-child(2) {
+					margin-top: 0px;
+				}
+			}
+			&:last-child {
+				margin-bottom: 0px;
+			}
+			&-name {
+				margin: 0 0 0 40px;
+				font-size: 1.1rem;
+				@media(max-width: 991px) {
+					margin: 0;
+				}
+			}
+			&-time {
+				width: 24px;
+				height: 25px;
+				background: url("../img/dashboard-sprite.png");
+				background-position: -1px 25px;
+				margin: 0 20px;
+			}
+			&-icons {
+				@media(max-width: 576px) {
+				    margin-top: 13px;
+				}
+			}
+			&-delete {
+				width: 19px;
+				height: 19px;
+				background: url("../img/dashboard-sprite.png");
+				background-position-x: 20px;
+			}
+			&-edit {
+				width: 21px;
+				height: 19px;
+				background: url("../img/dashboard-sprite.png");
+				background-position: 23px 20px;
+			}
+			&-tick {
+				width: 22px;
+				height: 20px;
+				background: url("../img/dashboard-sprite.png");
+				background-position: 44px 21px;
+			}
+		}
+		&_status-done {
+			text-decoration: line-through;
+			.dashboard__list-item-time {
+				background-position: -1px 0;
+			}
+			.dashboard__list-item-tick {
+				background-position: 44px -1px;
+			}
+		}
+		&-no-tasks {
+			display: none;
+		}
+		//scroll for list
+		@media (min-width: 768px) {
+			&::-webkit-scrollbar{
+				background-color: #2c3e50;
+				width: 4px;
+			}
+			&::-webkit-scrollbar-thumb:hover{
+				background-color: rgba(0, 187, 175, 0.35);
+			}
+		}
+
+	}
+	&__status {
+		display: none;
+	}
+	@media(max-width: 767px) {
+		margin: 0 auto;
+    	padding-top: 20px;
+	}
+}
