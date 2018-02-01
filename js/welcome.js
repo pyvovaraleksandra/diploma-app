@@ -13,14 +13,16 @@ var Welcome = {
                 Please enter your data and press “start” button
               </div>
         
-              <form action="#" class="form-horizontal welcomePage__registrationForm basic-form col-11 col-sm-9 col-md-8" novalidate>
+              <form action="#" 
+                    v-on:submit.prevent="toDashboard"
+                    class="form-horizontal welcomePage__registrationForm basic-form col-11 col-sm-9 col-md-8">
                 <div class="form-group">
                   <label for="inputEmail">Your email:</label>
-                  <input type="email" class="form-control welcomePage__registrationForm-email basic-form-text-input" id="inputEmail" aria-describedby="emailHelp" placeholder="Please enter your email" required>
+                  <input type="email" class="form-control welcomePage__registrationForm-email basic-form-text-input" id="inputEmail" aria-describedby="emailHelp" placeholder="Please enter your email">
                 </div>
                 <div class="form-group">
                   <label for="inputPassword">Your password:</label>
-                  <input type="password" class="form-control welcomePage__registrationForm-pass basic-form-text-input" id="inputPassword" placeholder="Please enter your password" required>
+                  <input type="password" class="form-control welcomePage__registrationForm-pass basic-form-text-input" id="inputPassword" placeholder="Please enter your password">
                 </div>
                 <div class="alert basic-form__alert" role="alert">
                   Invalid input data
@@ -35,9 +37,9 @@ var Welcome = {
    	  </section>
     </div> 
   `,
-  /*methods: {
+  methods: {
   	toDashboard: function() {
   		this.$router.push({ name: 'dashboard' });
   	}
-  }*/
+  }
 };

@@ -1,6 +1,6 @@
 var routes = [
   {
-    path: '/welcome',
+    path: '/',
     name: 'welcome',
     component: Welcome
   },

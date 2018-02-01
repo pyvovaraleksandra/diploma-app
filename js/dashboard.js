@@ -137,5 +137,5 @@ var Dashboard = {
 	      </div>
 	    </section>
 	  </div>
-	`,	
+	`	
 };
