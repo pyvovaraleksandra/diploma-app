@@ -1,8 +1,8 @@
-@import "forms";
-@import "left-buttons";
-@import "welcome-page";
-@import "profile-page";
-@import "dashboard";
+@import "forms.scss";
+@import "left-buttons.scss";
+@import "welcome-page.scss";
+@import "profile-page.scss";
+@import "dashboard.scss";
 
 %default-font {
 	font-size: 1.1rem;
@@ -42,6 +42,7 @@ html {
 	font-size: 1.8rem;
   	font-weight: 500;
 }
+
 
 // 16 - 1rem
 // 18 - 1.1rem

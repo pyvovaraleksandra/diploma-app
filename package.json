@@ -16,6 +16,8 @@
   "author": "alex&evgenia",
   "license": "ISC",
   "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
     "vue": "^2.5.13",
     "vue-router": "^3.0.1",
     "vuejs": "^3.0.1"
