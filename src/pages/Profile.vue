@@ -18,15 +18,22 @@
                   <p class="profile__content-left-name col-sm-7 col-md-12 mx-auto">Alex</p>
                 </div>
                 <div class="profile__content-left-buttons left-buttons row flex-column">
-                  <div class="col-10 col-sm-7 col-md-12 mx-auto">
-                    <a href="#addTask" class="left-buttons-button left-buttons-button-darkblue">Add Task</a>
+                  
+                  <div v-on:submit.prevent="toAddTask" 
+                       class="col-10 col-sm-7 col-md-12 mx-auto">
+                    <router-link :to="{name: 'AddTask'}" class="left-buttons-button left-buttons-button-darkblue">Add Task </router-link>
                   </div>
-                  <div class="col-10 col-sm-7 col-md-12 mx-auto">
-                    <a href="#dashboard" class="left-buttons-button left-buttons-button-blue">Dashboard</a>
+
+                  <div v-on:submit.prevent="toDashboard"
+                       class="col-10 col-sm-7 col-md-12 mx-auto">
+                    <router-link :to="{name: 'Dashboard'}" class="left-buttons-button left-buttons-button-blue">Dashboard</router-link>
                   </div>
-                  <div class="col-10 col-sm-7 col-md-12 mx-auto">
-                    <a href="#exit" class="left-buttons-button left-buttons-button-pink">exit</a>
+
+                  <div v-on:submit.prevent="toWelcome"
+                       class="col-10 col-sm-7 col-md-12 mx-auto">
+                    <router-link :to="{name: 'Welcome'}" class="left-buttons-button left-buttons-button-pink">exit</router-link>
                   </div>
+
                 </div>
               </div>
             </div>
@@ -72,7 +79,20 @@
 <script>
   // import { getProfile } from '@/services/http.js';
   export default {
-    name: 'Profile'
+    name: 'Profile',
+    methods: {
+      toAddTask: function() { 
+        this.$router.push({ name: 'addTask' });
+      },
+
+      toDashboard: function() {
+        this.$router.push({ name: 'dashboard' });
+      }, 
+
+      toWelcome: function() {
+          this.$router.push({ name: 'welcome' });
+        }
+    }
   }
 
 </script>

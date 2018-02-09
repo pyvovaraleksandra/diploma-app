@@ -4,6 +4,8 @@ import HelloWorld from '@/components/HelloWorld'
 import Welcome from '@/pages/Welcome'
 import Dashboard from '@/pages/Dashboard'
 import Profile from '@/pages/Profile'
+import AddTask from '@/pages/AddTask'
+import EditTask from '@/pages/EditTask'
 
 Vue.use(Router)
 
@@ -23,6 +25,17 @@ export default new Router({
       path: '/profile',
       name: 'Profile',
       component: Profile
+    },
+    { 
+      path: '/addTask',
+      name: 'AddTask',
+      component: AddTask
+    },
+    { 
+      path: 'editTask',
+      name: 'EditTask',
+      component: EditTask
     }
   ]  
 })
+

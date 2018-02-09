@@ -18,11 +18,15 @@
                   <p class="profile__content-left-name col-sm-7 col-md-12 mx-auto">Olga</p>
                 </div>
                 <div class="profile__content-left-buttons left-buttons row flex-column">
-                  <div class="col-10 col-sm-7 col-md-12 mx-auto">
-                    <a href="#addTask" class="left-buttons-button left-buttons-button-darkblue">Add Task</a>
+                  
+                  <div v-on:submit.prevent="toAddTask" 
+                       class="col-10 col-sm-7 col-md-12 mx-auto">
+                    <router-link :to="{name: 'AddTask'}" class="left-buttons-button left-buttons-button-darkblue">Add Task </router-link>
                   </div>
-                  <div class="col-10 col-sm-7 col-md-12 mx-auto">
-                    <a href="#profile" class="left-buttons-button left-buttons-button-blue">Edit profile</a>
+
+                  <div v-on:submit.prevent="toProfile"
+                       class="col-10 col-sm-7 col-md-12 mx-auto">
+                    <router-link :to="{name: 'Profile'}" class="left-buttons-button left-buttons-button-blue">Edit profile</router-link>
                   </div>
                   <div class="col-10 col-sm-7 col-md-12 mx-auto">
                     <a href="#/" class="left-buttons-button left-buttons-button-pink">exit</a>
@@ -140,10 +144,18 @@
       showCurrent(event, slick, currentSlide) {
         this.currentFilterStatus = this.filterItems[currentSlide].status;
         console.log(this.currentFilterStatus);
+      },
+      toAddTask: function() {
+        this.$router.push({ name: 'addTask' });
+      },
+      toProfile: function() {
+        this.$router.push({ name: 'profile' });
+      }, 
+      toWelcome: function() {
+        this.$router.push({ name: 'welcome' });
       }
     }
-
-  }
+  };
 </script>
 
 <style>
