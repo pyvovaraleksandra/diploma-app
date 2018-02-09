@@ -10,37 +10,14 @@
           </div>
           <div class="row profile__content">
             <div class="offset-md-1 col-md-3">
-              <div class="profile__content-left text-center">
-                <div class="row">
-                  <img class="rounded-circle profile__content-left-avatar mx-auto" src="../assets/avatar.png" alt="avatar">
-                </div>
-                <div class="row">
-                  <p class="profile__content-left-name col-sm-7 col-md-12 mx-auto">Olga</p>
-                </div>
-                <div class="profile__content-left-buttons left-buttons row flex-column">
-                  
-                  <div v-on:submit.prevent="toAddTask" 
-                       class="col-10 col-sm-7 col-md-12 mx-auto">
-                    <router-link :to="{name: 'AddTask'}" class="left-buttons-button left-buttons-button-darkblue">Add Task </router-link>
-                  </div>
-
-                  <div v-on:submit.prevent="toProfile"
-                       class="col-10 col-sm-7 col-md-12 mx-auto">
-                    <router-link :to="{name: 'Profile'}" class="left-buttons-button left-buttons-button-blue">Edit profile</router-link>
-                  </div>
-                  <div class="col-10 col-sm-7 col-md-12 mx-auto">
-                    <a href="#/" class="left-buttons-button left-buttons-button-pink">exit</a>
-                  </div>
-                </div>
-              </div>
+              <left-column/>
             </div>
             <div class="col-10 col-sm-9 col-md-7 dashboard">
 
               <div id="tasks">
                 <div class="row">
                   <div class="col-9 col-sm-7 col-lg-5 dashboard__filter-small">
-                    <slick ref="slick" 
-                           :options="slickOptions" 
+                    <slick ref="slick"
                            @afterChange="showCurrent"
                            class="dashboard__filter d-flex">
                       <div class="dashboard__filter-item"
@@ -59,7 +36,7 @@
                     <div class="col-sm-4 d-flex justify-content-around dashboard__list-item-icons">
                       <a href="#" class="dashboard__list-item-delete"
                          @click="deleteTask(itemKey)"></a>
-                      <a href="#" class="dashboard__list-item-edit"></a>
+                      <router-link :to="{name: 'EditTask'}" class="dashboard__list-item-edit"></router-link>
                       <a href="#" class="dashboard__list-item-tick"
                          @click="changeStatus(itemKey)"></a>
                     </div>
@@ -75,10 +52,14 @@
 </template>
 
 <script>
+  import LeftColumn from '@/components/LeftColumn.vue'
   import Slick from 'vue-slick';
   export default {
     name: 'Dashboard',
-    components: { Slick },
+    components: { 
+      Slick,
+      'left-column' : LeftColumn
+    },
     data() {
       return {
         currentFilterStatus : '',
@@ -101,9 +82,6 @@
           },
 
         ],
-        slickOptions: {
-            slidesToShow: 1,
-        },
         items: {
           "3rj.u7" : {
             "title" : "Done task",
@@ -163,9 +141,7 @@
 </style>
 
 <!-- scroll.
-left column = component. 
 save scroll after changing status 
 import bootstrap
 set favicon
-add link to edit
-set height and width for avatar-->
+-->
