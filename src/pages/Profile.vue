@@ -70,12 +70,9 @@
 </template>
 
 <script>
+  // import { getProfile } from '@/services/http.js';
   export default {
     name: 'Profile'
   }
 
 </script>
-
-<style lang="scss">
-  // @import '../../scss/main.scss';
-</style>

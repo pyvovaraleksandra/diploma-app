@@ -18,17 +18,24 @@
 			transform: none;
 			height: auto;
 			width: auto;
-			padding: 13px 20px;
+			padding: 16px 20px;
+			background-color: transparent;
+    		border: none;
+    		font-size: 0;
+    		cursor: pointer;
+    		&:focus {
+    			outline: none;
+    		}
 		}
 		.slick-next {
 			border-left: 2px solid #2c3e50;
 		}
 		.slick-prev:before {
-		    content: url("../assets/to-left.png");
+		    content: url("assets/to-left.png");
 		    opacity: 1;
 		}
 		.slick-next:before {
-		    content: url("../assets/to-right.png");
+		    content: url("assets/to-right.png");
 		    opacity: 1;
 		}
 		.slick-list {
@@ -41,7 +48,6 @@
 	}
 	&__list {
 		overflow-y: auto;
-		margin-top: 7px;
 		padding-right: 9px;
     	margin-right: -9px;
 
@@ -69,7 +75,7 @@
 			&-time {
 				width: 24px;
 				height: 25px;
-				background: url("../assets/dashboard-sprite.png");
+				background: url("assets/dashboard-sprite.png");
 				background-position: -1px 25px;
 				margin: 0 20px;
 			}
@@ -81,19 +87,19 @@
 			&-delete {
 				width: 19px;
 				height: 19px;
-				background: url("../assets/dashboard-sprite.png");
+				background: url("assets/dashboard-sprite.png");
 				background-position-x: 20px;
 			}
 			&-edit {
 				width: 21px;
 				height: 19px;
-				background: url("../assets/dashboard-sprite.png");
+				background: url("assets/dashboard-sprite.png");
 				background-position: 23px 20px;
 			}
 			&-tick {
 				width: 22px;
 				height: 20px;
-				background: url("../assets/dashboard-sprite.png");
+				background: url("assets/dashboard-sprite.png");
 				background-position: 44px 21px;
 			}
 		}

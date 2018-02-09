@@ -1,7 +1,8 @@
-@import "forms.scss";
-// @import "left-buttons.scss";
-// @import "profile-page.scss";
-// @import "dashboard.scss";
+@import "_forms.scss";
+@import "_left-buttons.scss";
+@import "_profile.scss";
+@import "_dashboard.scss";
+@import "_welcome.scss";
 
 %default-font {
 	font-size: 1.1rem;
@@ -16,7 +17,7 @@ html {
 }
 
 .section {
-	background: url('../assets/bg.jpg') center no-repeat;
+	background: url('assets/bg.jpg') center no-repeat;
 	background-size: cover;
 	height: 100vh;
     display: flex;

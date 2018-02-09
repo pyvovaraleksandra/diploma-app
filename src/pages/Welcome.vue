@@ -48,7 +48,3 @@
   };
 </script>
 
-<style lang="scss">
-  @import '../scss/style.scss';
-  @import '../scss/welcome.scss';
-</style>
