@@ -38,7 +38,7 @@
                          @click="deleteTask(itemKey)"></a>
                       <router-link :to="{name: 'EditTask'}" class="dashboard__list-item-edit"></router-link>
                       <a href="#" class="dashboard__list-item-tick"
-                         @click="changeStatus(itemKey)"></a>
+                         @click.prevent="changeStatus(itemKey)"></a>
                     </div>
                   </div>                 
                 </div>
@@ -140,8 +140,8 @@
   @import '../../node_modules/slick-carousel/slick/slick.scss';
 </style>
 
-<!-- scroll.
-save scroll after changing status 
+<!-- 
+scroll.
 import bootstrap
 set favicon
 -->
